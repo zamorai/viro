@@ -1,0 +1,146 @@
+/* 
+.embla {
+
+  height: 300px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.embla__container {
+  display: flex;
+  width: calc(600px * 12);
+  gap: 15px;
+  cursor: grab;
+}
+
+
+.embla__slide {
+  height: 200px;
+  width: 600px;
+  border-radius: 17px;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(128, 128, 128, 0.227);
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-600px * 6));
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .slideTrack {
+    width: calc(400px * 12);
+  }
+  
+  .slide {
+    width: 400px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-400px * 6));
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .slideTrack {
+    width: calc(300px * 12);
+  }
+  
+  .slide {
+    width: 300px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-300px * 6));
+    }
+  }
+} */
+
+.embla {
+  overflow: hidden;
+  height: 300px;
+  transform: translateY(-3rem);
+  cursor: grab;
+}
+
+
+.embla__container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+}
+.embla__container.is-draggable {
+  cursor: move;
+  cursor: grab;
+}
+
+.embla__container.is-dragging {
+  cursor: grabbing;
+}
+
+.embla__slide {
+  flex: 0 0 25%;
+  height: 200px;
+  margin: 0 1rem;
+  border-radius: 17px;
+  font-size: 2.4rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: white;
+  box-shadow: 0px 10px 30px rgba(128, 128, 128, 0.134);
+}
+
+@media only screen and (max-width: 1600px) {
+  .embla__slide {
+    flex: 0 0 35%;
+  }
+
+  .embla__slide {
+    font-size: 2rem;
+  }
+  
+}
+
+@media only screen and (max-width: 950px) {
+  .embla__slide {
+    flex: 0 0 49%;
+  }
+
+  .embla__slide {
+    font-size: 1.8rem;
+  }
+
+}
+
+@media only screen and (max-width: 650px) {
+  .embla__slide {
+    flex: 0 0 70%;
+  }
+  
+}

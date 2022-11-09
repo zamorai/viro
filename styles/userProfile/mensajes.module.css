@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  height: calc(100vh - 19.5rem);
+  overflow: auto;
+  background-color: #fafafa;
+  background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.messages {
+  padding: 1rem 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+
+}
+
+.messageContainer {
+  border-radius: 10px;
+  max-width: 65%;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 1rem 1rem;
+  position: relative;
+}
+
+.messageContainerSmall {
+  border-radius: 10px;
+  max-width: 65%;
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: rgb(213, 248, 213);
+}
+
+.doctorMessage {
+  align-self: flex-start;
+  background-color: rgb(255, 255, 255);
+}
+
+.messageContent {
+  font-size: 1.5rem;
+  color: black; 
+  font-weight: 300;
+}
+
+.messageDate {
+  align-self: center;
+  font-size: 1.4rem;
+  font-weight: 300;
+  background-color: rgba(255, 255, 255, 0.737);
+  padding: 0.2rem 3rem;
+  border-radius: 5px;
+}
+
+.messageTime {
+  /* position: absolute;
+  bottom: 5px;
+  right: 11px; */
+  align-self: flex-end;
+  font-size: 1.2rem;
+  font-weight: 300;
+  color: rgb(87, 106, 125);
+}
+
+
+.inputContainer {
+  height: 7rem;
+  background-color: #eff2f5;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 2rem;
+  font-size: 1.6rem;
+  gap: 1rem;
+  color: black;
+}
+
+.input {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  flex: 1;
+  padding: 1rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+.button {
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(0, 0, 0);
+  padding: 1rem 5rem;
+}

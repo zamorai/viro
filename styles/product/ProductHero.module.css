@@ -1,0 +1,88 @@
+.wrapper {
+  margin: 0 3rem;
+  margin-top: 2rem;
+}
+
+.container {
+ display: flex;
+ max-width: 1600px;
+ margin: 0 auto;
+ padding-top: 5rem;
+}
+
+.imageContainer {
+  flex: 2;
+  overflow: hidden;
+  padding: 1rem;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50px;
+}
+
+.infoContainer {
+  flex: 1;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.tag {
+  background-color: var(--gray);
+  padding: 0.3rem 0.7rem;
+  font-size: 1rem;
+  border-radius: 20px;
+  margin-bottom: 1.4rem;
+}
+
+.productName {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+.productSub {
+  color: gray;
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin-top: -0.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.productDesc {
+  font-size: 1.6rem;
+  width: 80%;
+}
+
+.button {
+  color: white;
+  background-color: black;
+  align-self: stretch;
+  width: 80%;
+  font-size: 1.4rem;
+  padding: 1rem;
+  border-radius: 20px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 500;
+
+}
+
+.accordion {
+  width: 80%;
+  margin-bottom: 1.4rem;
+}
+
+.accordionLabel {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.disclaimer {
+  font-size: 1.2rem;
+  color: gray;
+  width: 80%;
+}

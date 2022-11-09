@@ -1,0 +1,47 @@
+.container {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  padding-right: 5rem;
+}
+
+
+.navigation {
+  width: 100%;
+  height: 100%;
+  margin-top: -5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 1.5rem;
+}
+
+.intro {
+  font-size: 3rem;
+}
+
+
+.navItem {
+  color: black;
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.navItem:hover {
+  color: #bd6e3d;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1000px) {
+  .navItem {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navItem {
+    font-size: 3rem;
+  }
+}
+

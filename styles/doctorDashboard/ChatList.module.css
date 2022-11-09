@@ -1,0 +1,156 @@
+
+
+.contentContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: white
+}
+
+.titleContainer {
+  padding: 1rem;
+  
+}
+
+.title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: url('../../public/text-mask.png') 0 0 / cover no-repeat;
+  -webkit-background-clip: text;
+  background-position: center;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  padding-left: 1rem;
+  user-select: none;
+}
+
+.searchContainer {
+  width: 100%;
+  border-top: 1px solid rgb(230, 230, 230);
+  margin: 0 auto;
+  padding: 1rem 0;
+  box-shadow: 0px 5px 12px rgba(180, 180, 180, 0.14);
+  user-select: none;
+}
+
+.search {
+  width: 90%;
+  height: 3rem;
+  border-radius: 10px;
+  padding-left: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: black;
+  background-color: rgb(240, 242, 245);
+  margin-left: 5%;
+ 
+}
+
+.search:focus {
+  outline: none;
+}
+
+.chatContainer {
+  overflow: hidden;
+  height: 100%;
+  padding: 1rem 1rem 0;
+  overflow: auto;
+}
+
+.card {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  overflow: hidden;
+  cursor: pointer;
+  user-select: none;
+  padding-left: 1rem;
+}
+
+.activeCard {
+  background-color: rgb(243, 243, 243);
+}
+
+.card:hover {
+  background-color: rgb(243, 243, 243);
+}
+
+.messageInfo {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  gap: 0.5rem;
+  border-bottom: 0.1px solid rgb(225, 225, 225);
+  padding: 1.3rem 0;
+}
+
+.borderlessMessageInfo {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  gap: 0.5rem;
+  padding: 1.3rem 0;
+}
+
+.imageDummy {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+
+.topInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1rem;
+}
+
+.bottomInfo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+.userName {
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.date {
+  font-size: 1.2rem;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+}
+
+.lastMessage {
+  max-width: 37ch;
+  width: min-content;
+  font-size: 1.4rem;
+  border-radius: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: gray;
+}
+
+.unreadMessage {
+  font-weight: 600;
+  color: black;
+}
+
+.unread {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: rgb(65, 132, 239);
+  border-radius: 100%;
+  transform: translateY(1px);
+  margin: 0 1rem;
+  flex-shrink: 0;
+
+}

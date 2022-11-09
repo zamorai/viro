@@ -1,0 +1,114 @@
+.container {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: none;
+  height: 5.8rem;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.shadow {
+  transition: 0.4s ease;
+  box-shadow: 0px 10px 30px rgba(128, 128, 128, 0.11);
+}
+
+.noShadow {
+  box-shadow: none;
+  animation: removeShadow 0.4s ease;
+}
+
+
+
+.rightNav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.treatmentsContainer {
+  margin-right: 3rem;
+  padding: 0.3rem 1.7rem;
+  background-color: white;
+  border-radius: 2.5rem;
+  box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.079);
+  cursor: pointer;
+}
+
+.treatments {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.treatmentsText {
+  font-size: 1.8rem;
+  margin-right: 0.3rem;
+  font-weight: 500;
+}
+
+.treatmentsIcon {
+  transition: all 1s ease;
+}
+
+.treatmentsContainer:hover > .treatmentsIcon {
+  animation: float 10s linear infinite;
+}
+
+.logo {
+  font-family: 'Nord';
+  font-weight: 400;
+  font-size: 3.3rem;
+  margin-left: 2.5rem;
+  cursor: pointer;
+}
+
+.logoAlt {
+  font-family: 'Nord';
+  font-weight: 400;
+  font-size: 3.3rem;
+  cursor: pointer;
+}
+
+.burger {
+  padding-right: 2.5rem;
+}
+
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+@keyframes removeShadow {
+	0% {
+		box-shadow: 0px 10px 30px rgba(128, 128, 128, 0.11);
+	}
+	100% {
+		box-shadow: 0px 10px 30px rgba(128, 128, 128, 0);
+	}
+}
+
+@media only screen and (max-width: 770px) {
+  .treatmentsText {
+    font-size: 1.3rem;
+  }
+
+  .logo {
+    font-size: 2.5rem;
+  }
+
+  .logoAlt {
+    font-size: 2.5rem;
+  }
+}

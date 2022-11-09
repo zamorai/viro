@@ -1,0 +1,19 @@
+.container {
+ background-color: rgba(243, 243, 243, 0.415);
+ height: 5.6rem;
+ margin-top: 5.9rem;
+ width: 100%;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding-inline: 2.5rem;
+}
+
+.allChats {
+
+}
+
+.title {
+ font-size: 2.4rem;
+ 
+}

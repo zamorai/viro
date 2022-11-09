@@ -1,0 +1,99 @@
+.container {
+  width: 100%;
+  background-color: var(--light-gray);
+  min-height: calc(100vh - 12rem);
+}
+
+.infoContainer {
+  padding-top: 6rem; 
+  width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.numbers {
+  font-size: 1.5rem;
+  color: gray;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.question {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1333;
+}
+
+.subQuestion {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.answers {
+  width: 100%;
+}
+
+
+.checkboxRoot {
+  background-color: white;
+  border: 1px solid rgba(187, 186, 186, 0.333);
+  border-radius: 5px;
+  height: 8rem;
+  padding: 0rem 0 0rem 4rem;
+}
+
+.checkboxRoot:hover{
+  border: 1px solid var(--orange);
+}
+
+.checkboxLabel {
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-family: 'sofia-pro';
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.checkboxInput {
+  border: 2px solid var(--orange);
+}
+
+
+.textareaWrapper {
+
+}
+
+.textareaInput {
+  font-family: 'sofia-pro';
+  font-size: 1.8rem;
+}
+
+.submitButton {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  color: white;
+  border-radius: 1px;
+  padding: 2rem 0;
+  background-color: #bd6e3d;
+  transition: all 0.3s ease ;
+}
+
+.submitButtonDisabled {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2rem;
+  border-radius: 1px;
+  padding: 2rem 0;
+  background-color: rgb(170, 169, 169);
+  color: rgb(66, 66, 66);
+}

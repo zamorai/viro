@@ -1,8 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light-gray: #F9F9F9;
+  --brown-1: #FBF8F5;
+  --brown-2: #F3EBE2;
+  --brown-3: #EDE1D4;
+  --gray: #DDDED9;
+  --orange: #E9BA9E;
+  --brown: #D2C5B5;
+  --dark-orange: #bd6e3d;
+}
+
+@font-face {
+  font-family: 'Nord';
+  src: url('../fonts/Nord-Black.woff2') format('woff2'),
+      url('../fonts/Nord-Black.woff2') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nord';
+  src: url('../fonts/Nord-Bold.woff2') format('woff2'),
+      url('../fonts/Nord-Bold.woff2') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nord';
+  src: url('../fonts/Nord-Light.woff2') format('woff2'),
+      url('../fonts/Nord-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nord';
+  src: url('../fonts/Nord-Medium.woff2') format('woff2'),
+      url('../fonts/Nord-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Nord';
+  src: url('../fonts/Nord-Regular.woff2') format('woff2'),
+      url('../fonts/Nord-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+
+  font-size: 62.5%;
+  font-family: sofia-pro, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
@@ -13,4 +73,6 @@ a {
 
 * {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }

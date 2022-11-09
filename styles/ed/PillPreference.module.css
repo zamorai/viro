@@ -1,0 +1,137 @@
+.container {
+  padding-top: 6rem; 
+  width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.description {
+  margin-top: 1rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.card {
+  background-color: white;
+  width: 100%;
+  margin-top: 4rem;
+  height: 40rem;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 11px rgba(0, 0, 0, 0.108);
+  display: flex;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('../../public/background-14.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-basis: 40%;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+.upperLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.tag {
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #759159;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 3px;
+  max-width: max-content;
+}
+
+.medicine {
+ font-size: 2.4rem;
+ font-weight: 600;
+}
+
+.ingredient {
+  color: gray;
+  font-size: 1.4rem;
+}
+
+.right {
+ padding: 0 0 0 1.5rem;
+ flex-basis: 60%;
+ display: flex;
+ flex-direction: column;
+}
+
+.upperRight {
+  
+}
+
+.boost {
+  font-size: 1.4rem;
+}
+
+.duration {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.duration > p {
+  font-size: 1.4rem;
+  display: flex;
+  color: black;
+}
+
+.duration > p > span {
+  color: gray;
+  margin-right: 0.3rem;
+}
+
+.info {
+  width: 100%;
+  font-size: 1.6rem;
+}
+
+.info > p {
+  margin-top: 1.5rem;
+  color: gray;
+}
+
+.bottomRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.learnMore {
+  color: gray;
+  font-size: 1.6rem;
+  padding: 2rem 0.5rem;
+  text-decoration: underline;
+}
+
+.button {
+  background-color: var(--dark-orange);
+  border-radius: 2px;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}

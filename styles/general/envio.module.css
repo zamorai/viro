@@ -1,0 +1,73 @@
+.container {
+  padding-top: 6rem; 
+  width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+.card {
+  background-color: var(--light-gray);
+  width: 100%;
+  margin-top: 4rem;
+  height: min-content;
+  padding: 2rem;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxRoot {
+  background-color: white;
+  border: 1px solid rgba(187, 186, 186, 0.333);
+  border-radius: 5px;
+  height: 9rem;
+  padding: 0rem 0 0rem 4rem;
+}
+
+.checkboxRoot:hover{
+  border: 1px solid var(--orange);
+}
+
+.checkboxLabel {
+  font-size: 1.4rem;
+  font-weight: 500;
+  font-family: 'sofia-pro';
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+.checkboxInput {
+  border: 2px solid var(--orange);
+}
+
+.button {
+  margin-top: 2rem;
+  font-size: 1.6rem;
+  border-bottom: 2px solid var(--orange);
+  align-self: center;
+}
+
+.submitButton {
+  width: 100%;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-top: 2.5rem;
+  color: white;
+  border-radius: 1px;
+  padding: 2rem 0;
+  background-color: #bd6e3d;
+  transition: all 0.3s ease ;
+}

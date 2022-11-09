@@ -1,0 +1,21 @@
+.primary {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: 'sofia-pro';
+  padding: 12rem 5rem 3rem;
+}
+
+.secondary {
+  /* background: url('../../public/brush.png') 0 0 / cover no-repeat;
+  background-position: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap; */
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1000px) {
+  .primary {
+    font-size: 2rem
+  }
+}

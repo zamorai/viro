@@ -1,0 +1,31 @@
+
+
+.button {
+    position: relative;
+    border: 1px solid var(--orange);
+    border-radius: 50%;
+    background: white;
+    width: 5rem;
+    height: 5rem;
+    transition: all .3s ease;
+    
+}
+
+.button:hover {
+  color: rgb(49, 49, 49);
+  background-color: rgb(247, 247, 247);
+  border: 1px solid rgb(213, 137, 89);
+}
+
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 1rem 0;
+  background-color: white;
+  margin: 0;
+}
+
+

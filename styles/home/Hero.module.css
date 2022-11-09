@@ -1,0 +1,159 @@
+.container {
+height: 1000px;
+min-height: 100vh;
+display: flex;
+}
+
+.leftContent {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mockup {
+  width: 80%;
+  max-width: 100rem;
+}
+
+.content {
+
+  flex-basis: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+
+}
+
+.title {
+  padding-right: 8rem;
+  font-size: 10rem;
+  margin-top: 0;
+  margin-bottom: 2.3rem;
+  font-weight: 500;
+  line-height: 1.13333;
+  transition: all 1s ease;
+}
+
+
+.sub {
+  font-size: 2rem;
+  margin-bottom: 4rem;
+  color: gray;
+  letter-spacing: 1px;
+  font-weight: 300;
+  transition: all 1s ease;
+}
+
+.imgWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(7rem);
+}
+
+.imgSub {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+}
+
+.magic {
+  background: url('../../public/text-mask.png') 0 0 / cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+.backgroundImg {
+  position: absolute;
+  top: 80px;
+  right: 0;
+  min-height: 80rem;
+  z-index: -10;
+  opacity: 0;
+}
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+
+  to {
+    background-position: -200% center;
+  }
+}
+
+@media only screen and (max-width: 1880px) {
+  .title {
+    font-size: 7rem;
+  }
+
+  .sub {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .title {
+    font-size: 6rem;
+  }
+
+  .sub {
+    font-size: 1,9rem;
+  }
+
+  .leftContent {
+    flex-basis: 55%;
+  }
+
+  .content {
+    flex-basis: 45%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .title {
+    font-size: 5rem;
+  }
+  .sub {
+    font-size: 1.5rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 800px) {
+  .title {
+    font-size: 4.7rem;
+    padding-right: 0;
+  }
+
+  .sub {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .content {
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  .title {
+    font-size: 3.8rem;
+  }
+
+  .sub {
+    font-size: 1rem;
+  }
+
+
+}

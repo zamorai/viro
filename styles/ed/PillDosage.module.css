@@ -1,0 +1,67 @@
+.container {
+  padding-top: 6rem; 
+  width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1.1333;
+  font-weight: 600;
+}
+
+.monthly {
+  font-size: 1.2rem;
+  color: var(--dark-orange);
+  margin-bottom: 1rem;
+}
+
+.description {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.checkboxRoot {
+  background-color: white;
+  border: 1px solid rgba(187, 186, 186, 0.333);
+  border-radius: 5px;
+  height: 10rem;
+  width: 48rem;
+  margin-bottom: -1rem;
+  padding: 0rem 0 0rem 4rem;
+}
+
+.checkboxRoot:hover{
+  border: 1px solid var(--orange);
+}
+
+.checkboxLabel {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: 'sofia-pro';
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.checkboxInput {
+  border: 2px solid var(--orange);
+}
+
+.button {
+  margin-top: 2.5rem;
+  background-color: var(--dark-orange);
+  border-radius: 2px;
+  width: 100%;
+  height: 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}

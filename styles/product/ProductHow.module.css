@@ -1,0 +1,54 @@
+.container {
+  padding: 5rem;
+}
+
+.headerTitle {
+  font-size: 4rem;
+  margin: 7rem 0 4rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 4rem;
+}
+
+.card {
+
+}
+
+.img {
+  border-radius: 20px;
+}
+
+.info {
+  padding: 2rem 0;
+}
+
+.infoTitle {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.infoDesc {
+  font-size: 1.6rem;
+  color: gray;
+}
+
+@media only screen and (max-width: 1200px) {
+  .headerTitle {
+    font-size: 3rem;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+
+  .headerTitle {
+    font-size: 2.4rem;
+  }
+
+  .content {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 2rem;
+  }
+}

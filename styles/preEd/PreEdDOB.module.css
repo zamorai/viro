@@ -1,0 +1,41 @@
+.container {
+  padding-top: 6rem; 
+  width: 48rem;
+  margin: 0 auto;
+  display: flex;
+  height: 100%;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 5rem;
+  line-height: 1.1333;
+  font-weight: 600;
+}
+
+.monthly {
+  font-size: 1.2rem;
+  color: var(--dark-orange);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.description {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.date {
+  width: 48rem;
+  height: 8rem;
+  font-size: 1.7rem;
+  padding: 0 2rem;
+}
+
+.date:focus {
+  outline: none;
+}
+

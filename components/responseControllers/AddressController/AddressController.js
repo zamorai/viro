@@ -112,7 +112,7 @@ export default function AddressController({ nextStage, setClientSecret }) {
       <p className='text-2xl text-gray-500'>Mandaremos tu paquete discretamente a esta direccion</p>
       
       <div className='w-full'>
-        <Address nextStage={nextStage} updateDbStage={updateDbStage} createPurchase={createStripeIntent} />
+        <Address nextStage={nextStage} updateDbStage={updateDbStage} createPurchase={createSubscription} />
       </div>
       </div>
     </div>

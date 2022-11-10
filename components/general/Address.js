@@ -68,8 +68,8 @@ export default function Address({ nextStage, updateDbStage, createPurchase }) {
     })
     const favAddress = addresses.filter((address) => address.uuid === radioValue)
     createPurchase(favAddress)
-    // updateDbStage()
-    // nextStage('checkout', null)
+    updateDbStage()
+    nextStage('checkout', null)
     
   }
 

@@ -5,6 +5,7 @@ import { useAuth } from '../../../context/Auth'
 import styles from '../../../styles/general/envio.module.css'
 import styles1 from '../../../styles/questions/GeneralQ.module.css'
 import supabase from '../../../utils/supabase'
+import axios from 'axios'
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
@@ -17,15 +18,15 @@ const subscriptionStatus = {
   PAUSED: 'PAUSED'
 }
 
-export default function AddressController({ nextStage }) {
+export default function AddressController({ nextStage, setClientSecret }) {
   const router = useRouter()
   const user = useAuth()
 
   const updateDbStage = async() => {
-    const { data, error } = await supabase
-        .from(router.query.tratamiento)
-        .update({ stage: 5 })
-        .match({ id: user.user.id })
+    // const { data, error } = await supabase
+    //     .from(router.query.tratamiento)
+    //     .update({ stage: 5 })
+    //     .match({ id: user.user.id })
   }
 
   const createSubscription = async (address) => {
@@ -75,6 +76,24 @@ export default function AddressController({ nextStage }) {
     .insert({ id: user.user.id, address: JSON.stringify(address[0]), producto: profile.producto, status: subscriptionStatus.PENDING })
   }
 
+  const createStripeIntent = async (address) => {
+
+    // // get user name 
+    // const { data: info } = await supabase
+    //   .from('profiles')
+    //   .select()
+    //   .eq('id', user.user.id)
+    //   .single()
+
+    const response = await axios.get('/api/create-setup-intent', {
+      params: {
+        customerId: 'cus_MlrktHdaHQsOlM'
+      }
+    })
+    console.log('here?')
+    setClientSecret(response.data.client_secret)
+  }
+
   return (
     <div>
 
@@ -93,7 +112,7 @@ export default function AddressController({ nextStage }) {
       <p className='text-2xl text-gray-500'>Mandaremos tu paquete discretamente a esta direccion</p>
       
       <div className='w-full'>
-        <Address nextStage={nextStage} updateDbStage={updateDbStage} createPurchase={createSubscription} />
+        <Address nextStage={nextStage} updateDbStage={updateDbStage} createPurchase={createStripeIntent} />
       </div>
       </div>
     </div>

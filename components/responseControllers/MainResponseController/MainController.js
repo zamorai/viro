@@ -2,6 +2,7 @@ import { useRouter } from 'next/router';
 import React, { useEffect, useState } from 'react'
 import { useAuth } from '../../../context/Auth';
 import AddressController from '../AddressController/AddressController';
+import CheckoutController from '../CheckoutController/CheckoutController';
 import GeneralQ from '../CoreResponseController/GeneralQ';
 import PillController from '../PostResponseController/ed/PillController';
 import PreEdController from '../PreResponseController/PreEdController';
@@ -39,10 +40,10 @@ export default function MainController() {
   const router = useRouter() // category
 
   const [currentStage, setCurrentStage] = useState(null)
-  const [showReturn, setShowReturn] = useState(false)
   const [renderedStage, setRenderedStage] = useState(null); // default to no stage until info received
+  const [clientSecret, setClientSecret] = useState('')
 
-  console.log(currentStage)
+  console.log(currentStage, clientSecret)
   // FUNCTION TO CHOOSE CURRENT STAGE, AND EACH STAGE REGARDS THEIR OWN BACK AND FORTH LOGIC. 
   const chooseCurrentStage = (stage, subStage) => {
     setCurrentStage(stage)
@@ -59,10 +60,11 @@ export default function MainController() {
         setRenderedStage(<PillController nextStage={handleNextStage} />)
         break;
       case stages.address:
-        setRenderedStage(<AddressController nextStage={handleNextStage} />)
+        setRenderedStage(<AddressController setClientSecret={setClientSecret} nextStage={handleNextStage} />)
         break;
       case stages.checkout:
-        setRenderedStage()
+        setRenderedStage(<CheckoutController clientSecret={clientSecret} />)
+        break;
       case stages.final:
         // render final
     }
@@ -87,11 +89,18 @@ export default function MainController() {
 
   }, [router.query])
 
+  useEffect(() => {
+    console.log(clientSecret)
+    if (clientSecret) {
+      handleNextStage('checkout', null)
+    }
+  }, [clientSecret])
+
 
   return (
     <div>
       {/** gotta pass the handler for backing out depending on stage. and  */}
-      <MainControllerHeader currentStage={currentStage} showReturn={showReturn} />
+      <MainControllerHeader />
 
       {renderedStage}
     </div>

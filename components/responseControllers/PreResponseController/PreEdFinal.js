@@ -15,7 +15,7 @@ export default function PreEdFinal({ nextStage }) {
         .from(router.query.tratamiento)
         .update({ stage: 1 })
         .match({ id: user.user.id })
-    if (!!data) {
+    if (!error) {
       nextStage('coreResponse', null)
     } else {
       console.log(error, 'errrrrrr')

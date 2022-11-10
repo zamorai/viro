@@ -12,7 +12,6 @@ import { mainSpotlight, secondSpotlight } from '../information/spotlight';
 export default function Home() {
   const { hovered: hovered1, ref: ref1 } = useHover();
   const { hovered: hovered2, ref: ref2 } = useHover();
-  console.log(hovered1)
 
   return (
     <div >
